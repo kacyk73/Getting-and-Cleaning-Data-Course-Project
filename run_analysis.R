@@ -79,4 +79,4 @@ tidy <- tidy[,-c(1:2)]
 tidy <- merge(tidy, activity_labels, by="activity_ID", all.x = TRUE)
 
 #export tidy dataset to disk
-write.table(tidy, "tidy_dataset.txt", quote = FALSE)
+write.table(tidy, "tidy_dataset.txt", quote = FALSE, row.name = FALSE)
